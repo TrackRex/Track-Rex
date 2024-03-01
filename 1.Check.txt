@@ -1,0 +1,100 @@
+CS = {... 
+  'notIndexed',...
+  crystalSymmetry('6/mmm', [3.209 3.209 5.21], 'X||a*', 'Y||b', 'Z||c*', 'mineral', 'Magnesium', 'color', [0.53 0.81 0.98])};
+
+setMTEXpref('xAxisDirection','east');
+setMTEXpref('zAxisDirection','intoPlane');
+
+fname1 = "D:\HaoranYi\ze20 insitu as extruded cr20\1 25-08-17 ze20 exturded cr\ze20.crc"
+fname2 = "D:\HaoranYi\ze20 insitu as extruded cr20\2 5-09-17 4min\as ex cr20 400 4min nr.crc"
+fname3 = "D:\HaoranYi\ze20 insitu as extruded cr20\3 25-09-17 5min\5min NR.crc"
+fname4 = "D:\HaoranYi\ze20 insitu as extruded cr20\4 29-09-19 ze20 extrude cr20 400x6min\Project1 nr.crc"
+fname5 = "D:\HaoranYi\ze20 insitu as extruded cr20\5 2-10-17 10min\10 nr.crc"
+fname6 = "D:\HaoranYi\ze20 insitu as extruded cr20\6 09-10-17 20min\20 nr.crc"
+fname7 = "D:\HaoranYi\ze20 insitu as extruded cr20\7 16-10-17 35min\35-real.crc"
+
+ebsd1 = EBSD.load(fname1,CS,'interface','crc',...
+  'convertEuler2SpatialReferenceFrame');
+ebsd2 = EBSD.load(fname2,CS,'interface','crc',...
+  'convertEuler2SpatialReferenceFrame');
+ebsd3 = EBSD.load(fname3,CS,'interface','crc',...
+  'convertEuler2SpatialReferenceFrame');
+ebsd4 = EBSD.load(fname4,CS,'interface','crc',...
+  'convertEuler2SpatialReferenceFrame');
+ebsd5 = EBSD.load(fname5,CS,'interface','crc',...
+  'convertEuler2SpatialReferenceFrame');
+ebsd6 = EBSD.load(fname6,CS,'interface','crc',...
+  'convertEuler2SpatialReferenceFrame');
+ebsd7 = EBSD.load(fname7,CS,'interface','crc',...
+  'convertEuler2SpatialReferenceFrame');
+
+rot = rotation('axis',xvector,'angle',-90*degree);
+ebsd1('Magnesium').orientations = rot*ebsd1('Magnesium').orientations;
+ebsd2('Magnesium').orientations = rot*ebsd2('Magnesium').orientations;
+ebsd3('Magnesium').orientations = rot*ebsd3('Magnesium').orientations;
+ebsd4('Magnesium').orientations = rot*ebsd4('Magnesium').orientations;
+ebsd5('Magnesium').orientations = rot*ebsd5('Magnesium').orientations;
+ebsd6('Magnesium').orientations = rot*ebsd6('Magnesium').orientations;
+ebsd7('Magnesium').orientations = rot*ebsd7('Magnesium').orientations;
+ebsd1 = rotate(ebsd1,rotation.byAxisAngle(xvector,180*degree));
+ebsd2 = rotate(ebsd2,rotation.byAxisAngle(xvector,180*degree));
+ebsd3 = rotate(ebsd3,rotation.byAxisAngle(xvector,180*degree));
+ebsd4 = rotate(ebsd4,rotation.byAxisAngle(xvector,180*degree));
+ebsd5 = rotate(ebsd5,rotation.byAxisAngle(xvector,180*degree));
+ebsd6 = rotate(ebsd6,rotation.byAxisAngle(xvector,180*degree));
+ebsd7 = rotate(ebsd7,rotation.byAxisAngle(xvector,180*degree));
+
+ebsd3 = rotate(ebsd3,rotation.byAxisAngle(zvector,-2*degree));
+ebsd4 = rotate(ebsd4,rotation.byAxisAngle(zvector,-1*degree));
+ebsd5 = rotate(ebsd5,rotation.byAxisAngle(zvector,-2*degree));
+
+region1 = [65 -685 1385 675]; condition = inpolygon(ebsd1,region1); ebsd1 = ebsd1(condition);
+region2 = [58 -778 1395 740]; condition = inpolygon(ebsd2,region2); ebsd2 = ebsd2(condition);
+region3 = [30 -815 1410 730]; condition = inpolygon(ebsd3,region3); ebsd3 = ebsd3(condition);
+region4 = [80 -818 1390 725]; condition = inpolygon(ebsd4,region4); ebsd4 = ebsd4(condition);
+region5 = [72 -870 1405 760]; condition = inpolygon(ebsd5,region5); ebsd5 = ebsd5(condition);
+region6 = [140 -800 1362 735];condition = inpolygon(ebsd6,region6); ebsd6 = ebsd6(condition);
+region7 = [140 -820 1362 750];condition = inpolygon(ebsd7,region7); ebsd7 = ebsd7(condition);
+
+
+[grains1,ebsd1.grainId] = calcGrains(ebsd1('indexed') , 'angle',5*degree);
+grains1X = grains1; grains1 = grains1(grains1.grainSize>15)
+
+[grains2,ebsd2.grainId] = calcGrains(ebsd2('indexed') , 'angle',5*degree);
+ebsd2(grains2(grains2.grainSize<=8)) = [];
+[grains2,ebsd2.grainId] = calcGrains(ebsd2('indexed') , 'angle',5*degree);
+
+[grains3,ebsd3.grainId] = calcGrains(ebsd3('indexed') , 'angle',10*degree);
+ebsd3(grains3(grains3.grainSize<=6)) = [];
+[grains3,ebsd3.grainId] = calcGrains(ebsd3('indexed') , 'angle',10*degree);
+
+[grains4,ebsd4.grainId] = calcGrains(ebsd4('indexed') , 'angle',10*degree);
+ebsd4(grains4(grains4.grainSize<=10)) = [];
+[grains4,ebsd4.grainId] = calcGrains(ebsd4('indexed') , 'angle',10*degree);
+
+[grains5,ebsd5.grainId] = calcGrains(ebsd5('indexed') , 'angle',10*degree);
+ebsd5(grains5(grains5.grainSize<=3)) = [];
+[grains5,ebsd5.grainId] = calcGrains(ebsd5('indexed') , 'angle',10*degree);
+
+[grains6,ebsd6.grainId] = calcGrains(ebsd6('indexed') , 'angle',10*degree);
+ebsd6(grains6(grains6.grainSize<=3)) = [];
+[grains6,ebsd6.grainId] = calcGrains(ebsd6('indexed') , 'angle',10*degree);
+
+[grains7,ebsd7.grainId] = calcGrains(ebsd7('indexed') , 'angle',10*degree);
+ebsd7(grains7(grains7.grainSize<=3)) = [];
+[grains7,ebsd7.grainId] = calcGrains(ebsd7('indexed') , 'angle',10*degree);
+
+figure
+plot(grains1,grains1.meanOrientation,'micronbar','off')
+figure
+plot(grains2,grains2.meanOrientation,'micronbar','off')
+figure
+plot(grains3,grains3.meanOrientation,'micronbar','off')
+figure
+plot(grains4,grains4.meanOrientation,'micronbar','off')
+figure
+plot(grains5,grains5.meanOrientation,'micronbar','off')
+figure
+plot(grains6,grains6.meanOrientation,'micronbar','off')
+figure
+plot(grains7,grains7.meanOrientation,'micronbar','off')
