@@ -4,6 +4,8 @@ We acknowledge all peer researchers whose excellent work has made this toolbox p
 
 Contact us at track-rex@soton.ac.uk or dikai.guan@soton.ac.uk for general enquiries and potential collaboration.
 
+How to cite this paper: Zeng, Xun, Yi, Haoran, Zeng, Zhuoran, Yuan, Liang, Yi, Sangbong, Gao, Junheng, Rainforth, Mark and Guan, Dikai (2024) Track-Rex: a universal toolbox for tracking recrystallization nucleation and grain growth behaviors in polycrystalline materials. Journal of Materials Science and Technology. (In Press). This paper was accepted, and the full citation details will be updated once the paper is available online
+
 ## Instructions & Setting up
 
 All scripts work with [MATLAB](https://uk.mathworks.com/products/matlab.html) and [MTEX](https://mtex-toolbox.github.io/index). To [install MATLAB](https://login.mathworks.com/embedded-login/landing.html?cid=getmatlab&s_tid=gn_getml) you need firstly obtain a license (check if your organization provides one), and then follow the instructions. To [install MTEX](https://mtex-toolbox.github.io/download), please read the link and make sure the right version is deployed, we now supporting **mtex-6.0.beta2**. The whole toolbox is divided into three parts, as follows:
