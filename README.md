@@ -1,8 +1,8 @@
-# This toolkit contains scripts for our work in "Track-Rex: a universal toolbox for tracking recrystallization nucleation and grain growth behaviors in polycrystalline materials", Journal of Materials Science & Technology, by Xun Zeng, Haoran Yi, Dikai Guan ([paper link](https://eprints.soton.ac.uk/487523/)).
+# This toolkit contains scripts for our work in "Track-Rex: a universal toolbox for tracking recrystallization nucleation and grain growth behaviors in polycrystalline materials", Journal of Materials Science & Technology, by Xun Zeng, Haoran Yi, Zhuoran Zeng, Liang Yuan, Sangbong Yi, Junheng Gao, Mark Rainforth, Dikai Guan* ([paper link](https://eprints.soton.ac.uk/487523/)).
 
 We acknowledge all peer researchers whose excellent work has made this toolbox possible, especially MATLAB and MTEX. This toolkit is dedicated to realize the tracking of every single grain within a large in-situ Electron Backscatter Diffraction(EBSD) dataset, which usually contains thousands of grains. Applying this toolkit will greatly reduce data processing time, from several months to one or two days and does not require user interaction during running. Moreover, both statistical tracking results of all grains (for the very first time) and individual tracking of grain with interest can be obtained easily, enabling a range of further analysis. The application scenario in our paper is to investigate recrystallization and grain growth behaviors within two Magnesium alloys, notice that usage of the toolbox should apply to a broader range of polycrystalline materials where in-situ EBSD scan could boost research advancement.
 
-Contact us at track-rex@soton.ac.uk for general enquiries and potential collaboration.
+Contact us at track-rex@soton.ac.uk or dikai.guan@soton.ac.uk for general enquiries and potential collaboration.
 
 ## Instructions & Setting up
 
@@ -22,7 +22,7 @@ All scripts work with [MATLAB](https://uk.mathworks.com/products/matlab.html) an
 
 ## Demonstration
 
-Now start playing with Track_Rex by following this demonstration, data and scripts can be found in this repository, this will take about 2 hours.
+Now start playing with Track_Rex by following this demonstration, data and scripts can be found in this repository, this will take about 2 hours. Note that we run this using a 13th Gen Intel(R) Core(TM) i9-13900K PC.
 
 Download data files from MG_1.crc.zip to MG_7.crc.zip, unzip all and store in a local path. Below is a glance of the dataset, all the grains will be tracked in this demonstration.
 
