@@ -1,0 +1,1256 @@
+Track_7(:,7) = A7_6(:,1); Track_7(:,6) = A7_6(:,2); Track_7(:,1:5) = 0;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    for i = 1:height(Track_7) %6_5
+
+        if Track_7(i,6) == 0
+
+            Track_7(i,5) = 0
+        else
+
+            Track_7(i,5) = A6_5(Track_7(i,6),2)
+        end
+    end
+
+    for i = 1:height(Track_7) %5_4
+
+        if Track_7(i,5) == 0
+
+            Track_7(i,4) = 0
+        else
+
+            Track_7(i,4) = A5_4(Track_7(i,5),2)
+        end
+    end
+
+    for i = 1:height(Track_7) %4_3
+
+        if Track_7(i,4) == 0
+
+            Track_7(i,3) = 0
+        else
+
+            Track_7(i,3) = A4_3(Track_7(i,4),2)
+        end
+    end
+
+    for i = 1:height(Track_7) %3_2
+
+        if Track_7(i,3) == 0
+
+            Track_7(i,2) = 0
+        else
+
+            Track_7(i,2) = A3_2(Track_7(i,3),2)
+        end
+    end
+
+    for i = 1:height(Track_7) %2_1
+
+        if Track_7(i,2) == 0
+
+            Track_7(i,1) = 0
+        else
+
+            Track_7(i,1) = A2_1(Track_7(i,2),2)
+        end
+    end
+
+Track_6(:,6) = A6_5(:,1); Track_6(:,5) = A6_5(:,2); Track_6(:,1:4) = 0;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    for i = 1:height(Track_6) %5_4
+
+        if Track_6(i,5) == 0
+
+            Track_6(i,4) = 0
+        else
+
+            Track_6(i,4) = A5_4(Track_6(i,5),2)
+        end
+    end
+
+    for i = 1:height(Track_6) %4_3
+
+        if Track_6(i,4) == 0
+
+            Track_6(i,3) = 0
+        else
+
+            Track_6(i,3) = A4_3(Track_6(i,4),2)
+        end
+    end
+
+    for i = 1:height(Track_6) %3_2
+
+        if Track_6(i,3) == 0
+
+            Track_6(i,2) = 0
+        else
+
+            Track_6(i,2) = A3_2(Track_6(i,3),2)
+        end
+    end
+
+    for i = 1:height(Track_6) %2_1
+
+        if Track_6(i,2) == 0
+
+            Track_6(i,1) = 0
+        else
+
+            Track_6(i,1) = A2_1(Track_6(i,2),2)
+        end
+    end
+
+Track_5(:,5) = A5_4(:,1); Track_5(:,4) = A5_4(:,2); Track_5(:,1:3) = 0;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    for i = 1:height(Track_5) %4_3
+
+        if Track_5(i,4) == 0
+
+            Track_5(i,3) = 0
+        else
+
+            Track_5(i,3) = A4_3(Track_5(i,4),2)
+        end
+    end
+
+    for i = 1:height(Track_5) %3_2
+
+        if Track_5(i,3) == 0
+
+            Track_5(i,2) = 0
+        else
+
+            Track_5(i,2) = A3_2(Track_5(i,3),2)
+        end
+    end
+
+    for i = 1:height(Track_5) %2_1
+
+        if Track_5(i,2) == 0
+
+            Track_5(i,1) = 0
+        else
+
+            Track_5(i,1) = A2_1(Track_5(i,2),2)
+        end
+    end
+
+Track_4(:,4) = A4_3(:,1); Track_4(:,3) = A4_3(:,2); Track_4(:,1:2) = 0;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    for i = 1:height(Track_4) %3_2
+
+        if Track_4(i,3) == 0
+
+            Track_4(i,2) = 0
+        else
+
+            Track_4(i,2) = A3_2(Track_4(i,3),2)
+        end
+    end
+
+    for i = 1:height(Track_4) %2_1
+
+        if Track_4(i,2) == 0
+
+            Track_4(i,1) = 0
+        else
+
+            Track_4(i,1) = A2_1(Track_4(i,2),2)
+        end
+    end
+
+Track_3(:,3) = A3_2(:,1); Track_3(:,2) = A3_2(:,2); Track_3(:,1) = 0;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    for i = 1:height(Track_3) %2_1
+
+        if Track_3(i,2) == 0
+
+            Track_3(i,1) = 0
+        else
+
+            Track_3(i,1) = A2_1(Track_3(i,2),2)
+        end
+    end
+
+Track_2(:,2) = A2_1(:,1); Track_2(:,1) = A2_1(:,2);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+for i = 1:height(Track_7)
+
+    if Track_7(i,1) ~= 0
+
+        G1in7(i,1) = Track_7(i,7)
+    
+    else if Track_7(i,1) == 0 & Track_7(i,2) ~= 0
+
+        G2in7(i,1)= Track_7(i,7)
+
+    else if Track_7(i,1) == 0 & Track_7(i,2) == 0 & Track_7(i,3) ~= 0
+
+        G3in7(i,1)= Track_7(i,7)
+
+    else if Track_7(i,1) == 0 & Track_7(i,2) == 0 & Track_7(i,3) == 0 & Track_7(i,4) ~= 0
+
+        G4in7(i,1)= Track_7(i,7)
+
+    else if Track_7(i,1) == 0 & Track_7(i,2) == 0 & Track_7(i,3) == 0 & Track_7(i,4) == 0 & Track_7(i,5) ~= 0
+
+        G5in7(i,1)= Track_7(i,7)
+
+    else if Track_7(i,1) == 0 & Track_7(i,2) == 0 & Track_7(i,3) == 0 & Track_7(i,4) == 0 & Track_7(i,5) == 0 & Track_7(i,6) ~= 0
+
+        G6in7(i,1)= Track_7(i,7)
+ 
+    else
+
+        G7in7(i,1)= Track_7(i,7)
+    end
+end;end;end;end;end;end;
+
+for i = 1:height(Track_6)
+
+    if Track_6(i,1) ~= 0
+
+        G1in6(i,1) = Track_6(i,6)
+    
+    else if Track_6(i,1) == 0 & Track_6(i,2) ~= 0
+
+        G2in6(i,1)= Track_6(i,6)
+
+    else if Track_6(i,1) == 0 & Track_6(i,2) == 0 & Track_6(i,3) ~= 0
+
+        G3in6(i,1)= Track_6(i,6)
+
+    else if Track_6(i,1) == 0 & Track_6(i,2) == 0 & Track_6(i,3) == 0 & Track_6(i,4) ~= 0
+
+        G4in6(i,1)= Track_6(i,6)
+
+    else if Track_6(i,1) == 0 & Track_6(i,2) == 0 & Track_6(i,3) == 0 & Track_6(i,4) == 0 & Track_6(i,5) ~= 0
+
+        G5in6(i,1)= Track_6(i,6)
+
+    else
+
+        G6in6(i,1)= Track_6(i,6)
+    end
+end;end;end;end;end;
+
+for i = 1:height(Track_5)
+
+    if Track_5(i,1) ~= 0
+
+        G1in5(i,1) = Track_5(i,5)
+    
+    else if Track_5(i,1) == 0 & Track_5(i,2) ~= 0
+
+        G2in5(i,1)= Track_5(i,5)
+
+    else if Track_5(i,1) == 0 & Track_5(i,2) == 0 & Track_5(i,3) ~= 0
+
+        G3in5(i,1)= Track_5(i,5)
+
+    else if Track_5(i,1) == 0 & Track_5(i,2) == 0 & Track_5(i,3) == 0 & Track_5(i,4) ~= 0
+
+        G4in5(i,1)= Track_5(i,5)
+
+    else
+
+        G5in5(i,1)= Track_5(i,5)
+    end
+end;end;end;end;
+
+for i = 1:height(Track_4)
+
+    if Track_4(i,1) ~= 0
+
+        G1in4(i,1) = Track_4(i,4)
+    
+    else if Track_4(i,1) == 0 & Track_4(i,2) ~= 0
+
+        G2in4(i,1)= Track_4(i,4)
+
+    else if Track_4(i,1) == 0 & Track_4(i,2) == 0 & Track_4(i,3) ~= 0
+
+        G3in4(i,1)= Track_4(i,4)
+
+    else
+
+        G4in4(i,1)= Track_4(i,4)
+    end
+end;end;end;
+
+for i = 1:height(Track_3)
+
+    if Track_3(i,1) ~= 0
+
+        G1in3(i,1) = Track_3(i,3)
+    
+    else if Track_3(i,1) == 0 & Track_3(i,2) ~= 0
+
+        G2in3(i,1)= Track_3(i,3)
+
+    else
+
+        G3in3(i,1)= Track_3(i,3)
+    end
+end;end;
+
+for i = 1:height(Track_2)
+
+    if Track_2(i,1) ~= 0
+
+        G1in2(i,1) = Track_2(i,2)
+    
+    else
+
+        G2in2(i,1) = Track_2(i,2)
+
+    end
+end;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% noise MediumPurpleuction
+
+    G1in7(all(G1in7==0,2),:) = [];
+    G2in7(all(G2in7==0,2),:) = [];
+    G3in7(all(G3in7==0,2),:) = [];
+    G4in7(all(G4in7==0,2),:) = [];
+    G5in7(all(G5in7==0,2),:) = [];
+    G6in7(all(G6in7==0,2),:) = [];
+    G7in7(all(G7in7==0,2),:) = [];
+    
+    G1in6(all(G1in6==0,2),:) = [];
+    G2in6(all(G2in6==0,2),:) = [];
+    G3in6(all(G3in6==0,2),:) = [];
+    G4in6(all(G4in6==0,2),:) = [];
+    G5in6(all(G5in6==0,2),:) = [];
+    G6in6(all(G6in6==0,2),:) = [];
+    
+    G1in5(all(G1in5==0,2),:) = [];
+    G2in5(all(G2in5==0,2),:) = [];
+    G3in5(all(G3in5==0,2),:) = [];
+    G4in5(all(G4in5==0,2),:) = [];
+    G5in5(all(G5in5==0,2),:) = [];
+    
+    G1in4(all(G1in4==0,2),:) = [];
+    G2in4(all(G2in4==0,2),:) = [];
+    G3in4(all(G3in4==0,2),:) = [];
+    G4in4(all(G4in4==0,2),:) = [];
+    
+    G1in3(all(G1in3==0,2),:) = [];
+    G2in3(all(G2in3==0,2),:) = [];
+    G3in3(all(G3in3==0,2),:) = [];
+    
+    G1in2(all(G1in2==0,2),:) = [];
+    G2in2(all(G2in2==0,2),:) = [];
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plot1
+
+    figure
+    plot(ebsd1(grains1X(G1in1)),'FaceColor','Grey','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.23 0.10 0.054],'String',{'150 µm'},'FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[2 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G1in1.png')
+    figure
+    plot(ebsd2(grains2(G1in2)),'FaceColor','Grey','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[6 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G1in2.png')
+    figure
+    plot(ebsd3(grains3(G1in3)),'FaceColor','Grey','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[11 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G1in3.png')
+    figure
+    plot(ebsd4(grains4(G1in4)),'FaceColor','Grey','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[16 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G1in4.png')
+    figure
+    plot(ebsd5(grains5(G1in5)),'FaceColor','Grey','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[21 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G1in5.png')
+    figure
+    plot(ebsd6(grains6(G1in6)),'FaceColor','Grey','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G1in6.png')
+    figure
+    plot(ebsd7(grains7(G1in7)),'FaceColor','Grey','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G1in7.png')
+
+    figure
+    plot(ebsd1(grains1X(G1in1)),ebsd1(grains1X(G1in1)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.23 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[2 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG1in1.png')
+    figure
+    plot(ebsd2(grains2(G1in2)),ebsd2(grains2(G1in2)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[6 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG1in2.png')
+    figure
+    plot(ebsd3(grains3(G1in3)),ebsd3(grains3(G1in3)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[11 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG1in3.png')
+    figure
+    plot(ebsd4(grains4(G1in4)),ebsd4(grains4(G1in4)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[16 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG1in4.png')
+    figure
+    plot(ebsd5(grains5(G1in5)),ebsd5(grains5(G1in5)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[21 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG1in5.png')
+    figure
+    plot(ebsd6(grains6(G1in6)),ebsd6(grains6(G1in6)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG1in6.png')
+    figure
+    plot(ebsd7(grains7(G1in7)),ebsd7(grains7(G1in7)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG1in7.png')
+
+    figure
+    h = Miller({0,0,0,1},ebsd1(grains1X(G1in1(:,1))).CS);
+    plotPDF(ebsd1(grains1X(G1in1(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains1 in EBSD1 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[2 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G1in1'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd2(grains2(G1in2(:,1))).CS);
+    plotPDF(ebsd2(grains2(G1in2(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains1 in EBSD2 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[6 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G1in2'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd3(grains3(G1in3(:,1))).CS);
+    plotPDF(ebsd3(grains3(G1in3(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains1 in EBSD3 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[11 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G1in3'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd4(grains4(G1in4(:,1))).CS);
+    plotPDF(ebsd4(grains4(G1in4(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains1 in EBSD4 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[16 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G1in4'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd5(grains5(G1in5(:,1))).CS);
+    plotPDF(ebsd5(grains5(G1in5(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains1 in EBSD5 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[21 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G1in5'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd6(grains6(G1in6(:,1))).CS);
+    plotPDF(ebsd6(grains6(G1in6(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains1 in EBSD6 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[26 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G1in6'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd7(grains7(G1in7(:,1))).CS);
+    plotPDF(ebsd7(grains7(G1in7(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains1 in EBSD7 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[31 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G1in7'],'-dpng');
+
+    figure
+    h1 = histogram(grains1X(G1in1).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[2 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains1 in EBSD1','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G1in1'],'-dpng');
+    figure
+    h1 = histogram(grains2(G1in2).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[6 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains1 in EBSD2','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G1in2'],'-dpng');
+    figure
+    h1 = histogram(grains3(G1in3).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[11 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains1 in EBSD3','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G1in3'],'-dpng');
+    figure
+    h1 = histogram(grains4(G1in4).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[16 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains1 in EBSD4','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G1in4'],'-dpng');
+    figure
+    h1 = histogram(grains5(G1in5).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[21 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains1 in EBSD5','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G1in5'],'-dpng');
+    figure
+    h1 = histogram(grains6(G1in6).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[26 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains1 in EBSD6','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G1in6'],'-dpng');
+    figure
+    h1 = histogram(grains7(G1in7).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[31 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains1 in EBSD7','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G1in7'],'-dpng');
+
+close all
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plot2
+
+    figure
+    plot(ebsd2(grains2(G2in2)),'FaceColor','SteelBlue','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[6 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G2in2.png')
+    figure
+    plot(ebsd3(grains3(G2in3)),'FaceColor','SteelBlue','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[11 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G2in3.png')
+    figure
+    plot(ebsd4(grains4(G2in4)),'FaceColor','SteelBlue','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[16 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G2in4.png')
+    figure
+    plot(ebsd5(grains5(G2in5)),'FaceColor','SteelBlue','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[21 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G2in5.png')
+    figure
+    plot(ebsd6(grains6(G2in6)),'FaceColor','SteelBlue','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G2in6.png')
+    figure
+    plot(ebsd7(grains7(G2in7)),'FaceColor','SteelBlue','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G2in7.png')
+
+    figure
+    plot(ebsd2(grains2(G2in2)),ebsd2(grains2(G2in2)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[6 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG2in2.png')
+    figure
+    plot(ebsd3(grains3(G2in3)),ebsd3(grains3(G2in3)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[11 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG2in3.png')
+    figure
+    plot(ebsd4(grains4(G2in4)),ebsd4(grains4(G2in4)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[16 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG2in4.png')
+    figure
+    plot(ebsd5(grains5(G2in5)),ebsd5(grains5(G2in5)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[21 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG2in5.png')
+    figure
+    plot(ebsd6(grains6(G2in6)),ebsd6(grains6(G2in6)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG2in6.png')
+    figure
+    plot(ebsd7(grains7(G2in7)),ebsd7(grains7(G2in7)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG2in7.png')
+
+    figure
+    h = Miller({0,0,0,1},ebsd2(grains2(G2in2(:,1))).CS);
+    plotPDF(ebsd2(grains2(G2in2(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains2 in EBSD2 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[2 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G2in2'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd3(grains3(G2in3(:,1))).CS);
+    plotPDF(ebsd3(grains3(G2in3(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains2 in EBSD3 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[7 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G2in3'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd4(grains4(G2in4(:,1))).CS);
+    plotPDF(ebsd4(grains4(G2in4(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains2 in EBSD4 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[12 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G2in4'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd5(grains5(G2in5(:,1))).CS);
+    plotPDF(ebsd5(grains5(G2in5(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains2 in EBSD5 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[17 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G2in5'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd6(grains6(G2in6(:,1))).CS);
+    plotPDF(ebsd6(grains6(G2in6(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains2 in EBSD6 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[22 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G2in6'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd7(grains7(G2in7(:,1))).CS);
+    plotPDF(ebsd7(grains7(G2in7(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains2 in EBSD7 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[27 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G2in7'],'-dpng');
+
+    figure
+    h1 = histogram(grains2(G2in2).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[2 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains2 in EBSD2','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G2in2'],'-dpng');
+    figure
+    h1 = histogram(grains3(G2in3).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[7 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains2 in EBSD3','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G2in3'],'-dpng');
+    figure
+    h1 = histogram(grains4(G2in4).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[12 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains2 in EBSD4','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G2in4'],'-dpng');
+    figure
+    h1 = histogram(grains5(G2in5).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[17 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains2 in EBSD5','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G2in5'],'-dpng');
+    figure
+    h1 = histogram(grains6(G2in6).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[22 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains2 in EBSD6','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G2in6'],'-dpng');
+    figure
+    h1 = histogram(grains7(G2in7).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[27 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains2 in EBSD7','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G2in7'],'-dpng');
+
+close all
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plot3
+
+    figure
+    plot(ebsd3(grains3(G3in3)),'FaceColor','SaddleBrown','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[11 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G3in3.png')
+    figure
+    plot(ebsd4(grains4(G3in4)),'FaceColor','SaddleBrown','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[16 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G3in4.png')
+    figure
+    plot(ebsd5(grains5(G3in5)),'FaceColor','SaddleBrown','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[21 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G3in5.png')
+    figure
+    plot(ebsd6(grains6(G3in6)),'FaceColor','SaddleBrown','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G3in6.png')
+    figure
+    plot(ebsd7(grains7(G3in7)),'FaceColor','SaddleBrown','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G3in7.png')
+
+    figure
+    plot(ebsd3(grains3(G3in3)),ebsd3(grains3(G3in3)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[11 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG3in3.png')
+    figure
+    plot(ebsd4(grains4(G3in4)),ebsd4(grains4(G3in4)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[16 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG3in4.png')
+    figure
+    plot(ebsd5(grains5(G3in5)),ebsd5(grains5(G3in5)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[21 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG3in5.png')
+    figure
+    plot(ebsd6(grains6(G3in6)),ebsd6(grains6(G3in6)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG3in6.png')
+    figure
+    plot(ebsd7(grains7(G3in7)),ebsd7(grains7(G3in7)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG3in7.png')
+
+    figure
+    h = Miller({0,0,0,1},ebsd3(grains3(G3in3(:,1))).CS);
+    plotPDF(ebsd3(grains3(G3in3(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains3 in EBSD3 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[2 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G3in3'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd4(grains4(G3in4(:,1))).CS);
+    plotPDF(ebsd4(grains4(G3in4(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains3 in EBSD4 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[7 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G3in4'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd5(grains5(G3in5(:,1))).CS);
+    plotPDF(ebsd5(grains5(G3in5(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains3 in EBSD5 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[14 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G3in5'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd6(grains6(G3in6(:,1))).CS);
+    plotPDF(ebsd6(grains6(G3in6(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains3 in EBSD6 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[21 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G3in6'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd7(grains7(G3in7(:,1))).CS);
+    plotPDF(ebsd7(grains7(G3in7(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains3 in EBSD7 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[28 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G3in7'],'-dpng');
+
+    figure
+    h1 = histogram(grains3(G3in3).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[2 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains3 in EBSD3','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G3in3'],'-dpng');
+    figure
+    h1 = histogram(grains4(G3in4).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[7 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains3 in EBSD4','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G3in4'],'-dpng');
+    figure
+    h1 = histogram(grains5(G3in5).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[14 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains3 in EBSD5','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G3in5'],'-dpng');
+    figure
+    h1 = histogram(grains6(G3in6).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[21 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains3 in EBSD6','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G3in6'],'-dpng');
+    figure
+    h1 = histogram(grains7(G3in7).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[28 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains3 in EBSD7','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G3in7'],'-dpng');
+
+close all
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plot4
+
+    figure
+    plot(ebsd4(grains4(G4in4)),'FaceColor','Chocolate','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[16 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G4in4.png')
+    figure
+    plot(ebsd5(grains5(G4in5)),'FaceColor','Chocolate','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[21 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G4in5.png')
+    figure
+    plot(ebsd6(grains6(G4in6)),'FaceColor','Chocolate','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G4in6.png')
+    figure
+    plot(ebsd7(grains7(G4in7)),'FaceColor','Chocolate','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G4in7.png')
+
+    figure
+    plot(ebsd4(grains4(G4in4)),ebsd4(grains4(G4in4)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[16 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG4in4.png')
+    figure
+    plot(ebsd5(grains5(G4in5)),ebsd5(grains5(G4in5)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[21 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG4in5.png')
+    figure
+    plot(ebsd6(grains6(G4in6)),ebsd6(grains6(G4in6)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG4in6.png')
+    figure
+    plot(ebsd7(grains7(G4in7)),ebsd7(grains7(G4in7)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG4in7.png')
+
+    figure
+    h = Miller({0,0,0,1},ebsd4(grains4(G4in4(:,1))).CS);
+    plotPDF(ebsd4(grains4(G4in4(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains4 in EBSD4 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[2 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G4in4'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd5(grains5(G4in5(:,1))).CS);
+    plotPDF(ebsd5(grains5(G4in5(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains4 in EBSD5 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[10 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G4in5'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd6(grains6(G4in6(:,1))).CS);
+    plotPDF(ebsd6(grains6(G4in6(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains4 in EBSD6 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[18 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G4in6'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd7(grains7(G4in7(:,1))).CS);
+    plotPDF(ebsd7(grains7(G4in7(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains4 in EBSD7 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[26 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G4in7'],'-dpng');
+
+    figure
+    h1 = histogram(grains4(G4in4).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[2 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains4 in EBSD4','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G4in4'],'-dpng');
+    figure
+    h1 = histogram(grains5(G4in5).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[10 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains4 in EBSD5','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G4in5'],'-dpng');
+    figure
+    h1 = histogram(grains6(G4in6).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[18 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains4 in EBSD6','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G4in6'],'-dpng');
+    figure
+    h1 = histogram(grains7(G4in7).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[26 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains4 in EBSD7','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G4in7'],'-dpng');
+
+close all
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plot5
+
+    figure
+    plot(ebsd5(grains5(G5in5)),'FaceColor','goldenrod','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[21 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G5in5.png')
+    figure
+    plot(ebsd6(grains6(G5in6)),'FaceColor','goldenrod','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G5in6.png')
+    figure
+    plot(ebsd7(grains7(G5in7)),'FaceColor','goldenrod','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G5in7.png')
+
+    figure
+    plot(ebsd5(grains5(G5in5)),ebsd5(grains5(G5in5)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[21 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG5in5.png')
+    figure
+    plot(ebsd6(grains6(G5in6)),ebsd6(grains6(G5in6)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG5in6.png')
+    figure
+    plot(ebsd7(grains7(G5in7)),ebsd7(grains7(G5in7)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG5in7.png')
+
+    figure
+    h = Miller({0,0,0,1},ebsd5(grains5(G5in5(:,1))).CS);
+    plotPDF(ebsd5(grains5(G5in5(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains5 in EBSD5 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[2 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G5in5'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd6(grains6(G5in6(:,1))).CS);
+    plotPDF(ebsd6(grains6(G5in6(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains5 in EBSD6 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[12 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G5in6'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd7(grains7(G5in7(:,1))).CS);
+    plotPDF(ebsd7(grains7(G5in7(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains5 in EBSD7 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[22 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G5in7'],'-dpng');
+
+    figure
+    h1 = histogram(grains5(G5in5).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[2 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains5 in EBSD5','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G5in5'],'-dpng');
+    figure
+    h1 = histogram(grains6(G5in6).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[12 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains5 in EBSD6','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G5in6'],'-dpng');
+    figure
+    h1 = histogram(grains7(G5in7).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[22 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains5 in EBSD7','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G5in7'],'-dpng');
+
+close all
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plot6
+
+    figure
+    plot(ebsd6(grains6(G6in6)),'FaceColor','YellowGreen','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G6in6.png')
+    figure
+    plot(ebsd7(grains7(G6in7)),'FaceColor','YellowGreen','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G6in7.png')
+
+    figure
+    plot(ebsd6(grains6(G6in6)),ebsd6(grains6(G6in6)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[26 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG6in6.png')
+    figure
+    plot(ebsd7(grains7(G6in7)),ebsd7(grains7(G6in7)).orientations,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG6in7.png')
+
+    figure
+    h = Miller({0,0,0,1},ebsd6(grains6(G6in6(:,1))).CS);
+    plotPDF(ebsd6(grains6(G6in6(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains6 in EBSD6 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[2 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G6in6'],'-dpng');
+    figure
+    h = Miller({0,0,0,1},ebsd7(grains7(G6in7(:,1))).CS);
+    plotPDF(ebsd7(grains7(G6in7(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains6 in EBSD7 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[15 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G6in7'],'-dpng');
+
+    figure
+    h1 = histogram(grains6(G6in6).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[2 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains6 in EBSD6','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G6in6'],'-dpng');
+    figure
+    h1 = histogram(grains7(G6in7).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[15 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains6 in EBSD7','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G6in7'],'-dpng');
+
+close all
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plot7
+
+    figure
+    plot(ebsd7(grains7(G7in7)),'FaceColor','CornflowerBlue','FaceAlpha',0.5,'micronbar','off');
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\G7in7.png')
+
+    figure
+    plot(ebsd7(grains7(G7in7)),ebsd7(grains7(G7in7)).orientations,'micronbar','off');  
+    annotation('textbox',[0.03 0.20 0.10 0.054],'String','150 µm','FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    set(gcf,'unit','centimeters','position',[31 12 16 12.8]); legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\GORG7in7.png')
+
+    figure
+    h = Miller({0,0,0,1},ebsd7(grains7(G7in7(:,1))).CS);
+    plotPDF(ebsd7(grains7(G7in7(:,1))).orientations,h,'contourf','minmax'); hold on;
+    title('Grains7 in EBSD7 [0001]','position',[0,1.48],'FontAngle','italic'); ax = gca; ax.TitleHorizontalAlignment = 'center'; hold on;
+    x = [0.5 0.5]; y = [0.47 0.87]; annotation('textarrow',x,y,'String','','LineWidth',2); hold on;
+    x1 = [0.5 0.95]; y1 = [0.47 0.47]; annotation('textarrow',x1,y1,'String','','LineWidth',2); hold on;
+    dim = [.5 .58 .3 .3]; str = 'TD'; a1 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a1.FontSize = 12; a1.FontWeight = 'bold'; hold on;
+    dim = [.84 .25 .3 .3]; str = 'RD'; a2 = annotation('textbox',dim,'String',str,'FitBoxToText','on','EdgeColor','none'); a2.FontSize = 12; a2.FontWeight = 'bold'; hold on;
+    set(gcf,'unit','centimeters','position',[2 4 8 8.9]); hold off; drawnow;
+    print(['D:\Track_Rex_Temp\PF_G7in7'],'-dpng');
+
+    figure
+    h1 = histogram(grains7(G7in7).equivalentRadius*2); hold on;
+    h1.Normalization = 'probability'; h1.BinLimits = [0 100]; h1.NumBins = 100; hold on;
+    set(gcf,'unit','centimeters','position',[2 2 12 10]); hold on;
+    title('Grain Size Distribution: Grains7 in EBSD7','position',[48,0.205],'FontSize',12); hold on;
+    ylim([0 0.2]); yticks([0 0.05 0.1 0.15 0.2]); hold on;
+    xlabel('Grain Size (µm)'); ylabel('Frequence(%)'); drawnow;
+    print(['D:\Track_Rex_Temp\GS_G7in7'],'-dpng');
+
+close all
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% plot All
+    
+    figure
+    plot(ebsd1(grains1X(G1in1)),'FaceColor','Grey','FaceAlpha',0.5,'micronbar','off'); legend('off'); drawnow;
+    annotation('textbox',[0.015 0.03 0.10 0.043],'String',{'      150 µm'},'FontSize',15,'FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    print(gcf,'-dpng','D:\Track_Rex_Temp\All1.png')
+    
+    figure
+    PG1in2 = plot(ebsd2(grains2(unique(G1in2,'rows'))),'FaceColor','Grey','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG2in2 = plot(ebsd2(grains2(unique(G2in2,'rows'))),'FaceColor','SteelBlue','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    annotation('textbox',[0.015 0.03 0.10 0.043],'String',{'      150 µm'},'FontSize',15,'FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    hold off; legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\All2.png')
+
+    figure
+    PG1in3 = plot(ebsd3(grains3(unique(G1in3,'rows'))),'FaceColor','Grey','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG2in3 = plot(ebsd3(grains3(unique(G2in3,'rows'))),'FaceColor','SteelBlue','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG3in3 = plot(ebsd3(grains3(unique(G3in3,'rows'))),'FaceColor','SaddleBrown','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    annotation('textbox',[0.015 0.03 0.10 0.043],'String',{'      150 µm'},'FontSize',15,'FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    hold off; legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\All3.png')
+
+    figure
+    PG1in4 = plot(ebsd4(grains4(unique(G1in4,'rows'))),'FaceColor','Grey','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG2in4 = plot(ebsd4(grains4(unique(G2in4,'rows'))),'FaceColor','SteelBlue','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG3in4 = plot(ebsd4(grains4(unique(G3in4,'rows'))),'FaceColor','SaddleBrown','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG4in4 = plot(ebsd4(grains4(unique(G4in4,'rows'))),'FaceColor','Chocolate','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    annotation('textbox',[0.015 0.03 0.10 0.043],'String',{'      150 µm'},'FontSize',15,'FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    hold off; legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\All4.png')
+
+    figure
+    PG1in5 = plot(ebsd5(grains5(unique(G1in5,'rows'))),'FaceColor','Grey','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG2in5 = plot(ebsd5(grains5(unique(G2in5,'rows'))),'FaceColor','SteelBlue','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG3in5 = plot(ebsd5(grains5(unique(G3in5,'rows'))),'FaceColor','SaddleBrown','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG4in5 = plot(ebsd5(grains5(unique(G4in5,'rows'))),'FaceColor','Chocolate','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG5in5 = plot(ebsd5(grains5(unique(G5in5,'rows'))),'FaceColor','goldenrod','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    annotation('textbox',[0.015 0.03 0.10 0.043],'String',{'      150 µm'},'FontSize',15,'FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    hold off; legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\All5.png')
+
+    figure
+    PG1in6 = plot(ebsd6(grains6(unique(G1in6,'rows'))),'FaceColor','Grey','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG2in6 = plot(ebsd6(grains6(unique(G2in6,'rows'))),'FaceColor','SteelBlue','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG3in6 = plot(ebsd6(grains6(unique(G3in6,'rows'))),'FaceColor','SaddleBrown','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG4in6 = plot(ebsd6(grains6(unique(G4in6,'rows'))),'FaceColor','Chocolate','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG5in6 = plot(ebsd6(grains6(unique(G5in6,'rows'))),'FaceColor','goldenrod','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG6in6 = plot(ebsd6(grains6(unique(G6in6,'rows'))),'FaceColor','YellowGreen','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    annotation('textbox',[0.022 0.03 0.10 0.043],'String',{'      150 µm'},'FontSize',15,'FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    hold off; legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\All6.png')
+
+    figure
+    PG1in7 = plot(ebsd7(grains7(unique(G1in7,'rows'))),'FaceColor','Grey','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG2in7 = plot(ebsd7(grains7(unique(G2in7,'rows'))),'FaceColor','SteelBlue','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG3in7 = plot(ebsd7(grains7(unique(G3in7,'rows'))),'FaceColor','SaddleBrown','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG4in7 = plot(ebsd7(grains7(unique(G4in7,'rows'))),'FaceColor','Chocolate','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG5in7 = plot(ebsd7(grains7(unique(G5in7,'rows'))),'FaceColor','goldenrod','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG6in7 = plot(ebsd7(grains7(unique(G6in7,'rows'))),'FaceColor','YellowGreen','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    PG7in7 = plot(ebsd7(grains7(unique(G7in7,'rows'))),'FaceColor','CornflowerBlue','FaceAlpha',0.5,'DisplayName','-','micronbar','off'); hold on
+    annotation('textbox',[0.030 0.03 0.10 0.043],'String',{'      150 µm'},'FontSize',15,'FontName','Trebuchet MS','FontAngle','italic','FitBoxToText','off','BackgroundColor',[0.80 0.80 0.80]);
+    hold off; legend('off'); drawnow;
+    print(gcf,'-dpng','D:\Track_Rex_Temp\All7.png')
+
+close all
