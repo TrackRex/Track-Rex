@@ -10,13 +10,30 @@ Potential collaborations: dikai.guan@soton.ac.uk
 How to cite this paper: Zeng, Xun, Yi, Haoran, Zeng, Zhuoran, Yuan, Liang, Yi, Sangbong, Gao, Junheng, Rainforth, Mark and Guan, Dikai (2024) Track-Rex: a universal toolbox for tracking recrystallization nucleation and grain growth behaviors in polycrystalline materials. Journal of Materials Science and Technology. (In Press). This paper was accepted, and the full citation details will be updated once the paper is available online
 
 See our video instructions
-_**What is Track_rex**_ https://www.youtube.com/watch?v=hkKFDYwRhTQ (Youtube) ; https://www.bilibili.com/video/BV1mv421r77j/?spm_id_from=333.999.0.0&vd_source=6eff8341617ef33a0c5c6f5aa4a4e273 (Bilibili)
 
-_**Video1:Double Match**_ https://www.youtube.com/watch?v=_GstKJvMVOc (Youtube) ; https://www.bilibili.com/video/BV1YK421t7Na/?spm_id_from=333.999.0.0&vd_source=6eff8341617ef33a0c5c6f5aa4a4e273 (Bilibili)
+_**What is Track_rex**_ 
 
-_**Video2:Tracking All**_ https://www.youtube.com/watch?v=VfS-a9o_TUI (Youtube) ; https://www.bilibili.com/video/BV1ix4y1C76C/?spm_id_from=333.999.0.0 (Bilibili)
+https://www.youtube.com/watch?v=hkKFDYwRhTQ (Youtube)
 
-_**Video3:Tracking Specific grains**_ https://www.youtube.com/watch?v=_l_4D8OAZRc (Youtube) ; https://www.bilibili.com/video/BV1Ex4y1r7eF/?spm_id_from=333.999.0.0&vd_source=6eff8341617ef33a0c5c6f5aa4a4e273 (Bilibili)
+https://www.bilibili.com/video/BV1mv421r77j/?spm_id_from=333.999.0.0&vd_source=6eff8341617ef33a0c5c6f5aa4a4e273 (Bilibili)
+
+_**Video1:Double Match**_ 
+
+https://www.youtube.com/watch?v=_GstKJvMVOc (Youtube)
+
+https://www.bilibili.com/video/BV1YK421t7Na/?spm_id_from=333.999.0.0&vd_source=6eff8341617ef33a0c5c6f5aa4a4e273 (Bilibili)
+
+_**Video2:Tracking All**_ 
+
+https://www.youtube.com/watch?v=VfS-a9o_TUI (Youtube)
+
+https://www.bilibili.com/video/BV1ix4y1C76C/?spm_id_from=333.999.0.0 (Bilibili)
+
+_**Video3:Tracking Specific grains**_ 
+
+https://www.youtube.com/watch?v=_l_4D8OAZRc (Youtube)
+
+https://www.bilibili.com/video/BV1Ex4y1r7eF/?spm_id_from=333.999.0.0&vd_source=6eff8341617ef33a0c5c6f5aa4a4e273 (Bilibili)
 
 
 ## Instructions & Setting up
