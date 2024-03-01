@@ -145,3 +145,10 @@ All figures will be saved under _D:/Track_Rex_Temp_. Now take a look at **Worksp
 ![IMG_9](https://github.com/TrackRex/Track_Rex/assets/161822160/fefe1162-6fc6-4974-a4e7-bd1ad5a7e69b)
 
 Now save the workspace together with figures and archive. All grains appeared in the _MG_1_ to _MG_7_ quasi-in-situ dataset has been tracked.
+
+## Give it a go by yourself
+
+Now with Track_rex at your service, try tracking 900 grains within this set of ebsd data, files can be find in the main branch _**Samll_region_data.zip**_
+
+![IMG_10](https://github.com/TrackRex/Track_Rex/assets/161822160/87650bb6-60d6-495b-96ad-c21ad98814f5)
+
