@@ -24,7 +24,7 @@ All scripts work with [MATLAB](https://uk.mathworks.com/products/matlab.html) an
 
 ## Demonstration
 
-Now start playing with Track_Rex by following this demonstration, data and scripts can be found in this repository, this will take about 2 hours. Note that we run this using a 13th Gen Intel(R) Core(TM) i9-13900K PC.
+Now start playing with Track_Rex by following this demonstration, data and scripts can be found in this repository, this will take about 2 hours, note that we run this using a 13th Gen Intel(R) Core(TM) i9-13900K PC.
 
 Download data files from MG_1.crc.zip to MG_7.crc.zip, unzip all and store in a local path. Below is a glance of the dataset, all the grains will be tracked in this demonstration.
 
