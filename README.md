@@ -1,15 +1,19 @@
-# This toolkit contains scripts for our work in "Track-Rex: a universal toolbox for tracking recrystallization nucleation and grain growth behaviors in polycrystalline materials", Journal of Materials Science & Technology, by Xun Zeng, Haoran Yi, Zhuoran Zeng, Liang Yuan, Sangbong Yi, Junheng Gao, Mark Rainforth, Dikai Guan* ([paper link](https://eprints.soton.ac.uk/487523/)).
+# How to cite this work for your future publications:
+Please cite the open-access paper below:
+
+Xun Zeng, Haoran Yi, Zhuoran Zeng, Liang Yuan, Sangbong Yi, Junheng Gao, Mark Rainforth, Dikai Guan, Track-Rex: a universal toolbox for tracking recrystallization nucleation and grain growth behaviors in polycrystalline materials, Journal of Materials Science & Technology, in press, 2024.
+
+doi: https://doi.org/10.1016/j.jmst.2024.02.013
 
 We acknowledge all peer researchers whose excellent work has made this toolbox possible, especially MATLAB and MTEX. This toolkit is dedicated to realize the tracking of every single grain within a large in-situ Electron Backscatter Diffraction(EBSD) dataset, which usually contains thousands of grains. Applying this toolkit will greatly reduce data processing time, from several months to one or two days and does not require user interaction during running. Moreover, both statistical tracking results of all grains (for the very first time) and individual tracking of grain with interest can be obtained easily, enabling a range of further analysis. The application scenario in our paper is to investigate recrystallization and grain growth behaviors within two Magnesium alloys, notice that usage of the toolbox should apply to a broader range of polycrystalline materials where in-situ EBSD scan could boost research advancement.
 
-Contact us:
+# Contact us:
 general enquiries and questions: track-rex@soton.ac.uk
 
 Potential collaborations: dikai.guan@soton.ac.uk 
 
-How to cite this paper: Zeng, Xun, Yi, Haoran, Zeng, Zhuoran, Yuan, Liang, Yi, Sangbong, Gao, Junheng, Rainforth, Mark and Guan, Dikai (2024) Track-Rex: a universal toolbox for tracking recrystallization nucleation and grain growth behaviors in polycrystalline materials. Journal of Materials Science and Technology. (In Press). This paper was accepted, and the full citation details will be updated once the paper is available online
 
-See our video instructions
+# See our video instructions
 
 _**What is Track_rex**_ 
 
@@ -57,6 +61,8 @@ All scripts work with [MATLAB](https://uk.mathworks.com/products/matlab.html) an
 Please find data used in https://sotonac-my.sharepoint.com/:f:/g/personal/hy1v22_soton_ac_uk/EspZ87_7f1lDpcOm3537Q3kBsKB2qeoj4U2CkR0WyjqAlw?e=nyAZmb
 
 Now start playing with Track_Rex by following this demonstration, data and scripts can be found in this repository, this will take about 2 hours, note that we run this using a 13th Gen Intel(R) Core(TM) i9-13900K PC.
+
+If you computer does not have a high specification or you want to have a quick run/test, please use a dataset consisting of only 900 grains and this will only take about 30 minutes, files can be find in the main branch _**Samll_region_data.zip**_
 
 Download data files from MG_1.crc.zip to MG_7.crc.zip, unzip all and store in a local path. Below is a glance of the dataset, all the grains will be tracked in this demonstration.
 
