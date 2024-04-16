@@ -1,16 +1,16 @@
 # How to cite this work for your future publications:
-Please cite the open-access paper below:
+
+Please cite our open-access paper below:
 
 Xun Zeng, Haoran Yi, Zhuoran Zeng, Liang Yuan, Sangbong Yi, Junheng Gao, Mark Rainforth, Dikai Guan, Track-Rex: a universal toolbox for tracking recrystallization nucleation and grain growth behaviors in polycrystalline materials, Journal of Materials Science & Technology (2024), https://doi.org/10.1016/j.jmst.2024.02.013.
 
-
-We acknowledge all peer researchers whose excellent work has made this toolbox possible, especially MATLAB and MTEX. This toolkit is dedicated to realize the tracking of every single grain within a large in-situ Electron Backscatter Diffraction(EBSD) dataset, which usually contains thousands of grains. Applying this toolkit will greatly reduce data processing time, from several months to one or two days and does not require user interaction during running. Moreover, both statistical tracking results of all grains (for the very first time) and individual tracking of grain with interest can be obtained easily, enabling a range of further analysis. The application scenario in our paper is to investigate recrystallization and grain growth behaviors within two Magnesium alloys, notice that usage of the toolbox should apply to a broader range of polycrystalline materials where in-situ EBSD scan could boost research advancement.
+We acknowledge all peer researchers whose excellent work has made this toolbox possible, especially MATLAB and MTEX. This toolkit is dedicated to realize the tracking of every single grain within a large in-situ Electron Backscatter Diffraction(EBSD) dataset, which usually contains thousands of grains. Applying this toolkit will greatly reduce data processing time, from several months to one or two days and does not require user interaction during implementation. Moreover, both statistical tracking results of all grains (for the very first time) and individual tracking of grain with interest can be obtained easily, enabling a range of further analysis. The application scenario in our paper is to investigate recrystallization and grain growth behaviors within two Magnesium alloys, notice that usage of the toolbox should apply to a broader range of polycrystalline materials where in-situ EBSD approaches could boost research advancement.
 
 # Contact us:
+
 general enquiries and questions: track-rex@soton.ac.uk
 
 Potential collaborations: dikai.guan@soton.ac.uk 
-
 
 # See our video instructions
 
