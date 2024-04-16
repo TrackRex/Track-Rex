@@ -14,7 +14,7 @@ Potential collaborations: dikai.guan@soton.ac.uk
 
 # See our video instructions
 
-_**Intro: What is Track_Rex**_ [Youtube](https://www.youtube.com/watch?v=hkKFDYwRhTQ) [Bilibili](https://www.bilibili.com/video/BV1mv421r77j)
+_**Intro: What is Track-Rex**_ [Youtube](https://www.youtube.com/watch?v=hkKFDYwRhTQ) [Bilibili](https://www.bilibili.com/video/BV1mv421r77j)
 
 _**Video1: Double Match**_ [Youtube](https://www.youtube.com/watch?v=_GstKJvMVOc) [BiliBili](https://www.bilibili.com/video/BV1YK421t7Na)
 
@@ -22,13 +22,13 @@ _**Video2: Tracking All**_ [Youtube](https://www.youtube.com/watch?v=VfS-a9o_TUI
 
 _**Video3: Specific Tracking**_ [Youtube](https://www.youtube.com/watch?v=_l_4D8OAZRc) [Bilibili](https://www.bilibili.com/video/BV1Ex4y1r7eF)
 
-## Instructions & Setting up
+# Instructions & Setting up
 
-All scripts work with [MATLAB](https://uk.mathworks.com/products/matlab.html) and [MTEX](https://mtex-toolbox.github.io/index). To [install MATLAB](https://login.mathworks.com/embedded-login/landing.html?cid=getmatlab&s_tid=gn_getml) you need firstly obtain a license (check if your organization provides one), and then follow the instructions. To [install MTEX](https://mtex-toolbox.github.io/download), please read the link and make sure the right version is deployed, we now supporting **mtex-6.0.beta2**. The whole toolbox is divided into three parts, as follows:
+We divide Track-Rex into three scripts, you can find annotated code in the link below.
 
 1. Script 1: [**Check**](https://github.com/TrackRex/Track-Rex/blob/main/1.Check.md)
 
-   A short script for users to quickly review the data, and obtain the parameters for starting the matching process.
+   A short script for users to quickly review the data, and obtain parameters to start the matching process.
 
 4. Script 2:  [**Match**](https://github.com/TrackRex/Track-Rex/blob/main/2.Match.md)
 
@@ -37,6 +37,9 @@ All scripts work with [MATLAB](https://uk.mathworks.com/products/matlab.html) an
 5. Script 3: [**Track**](https://github.com/TrackRex/Track-Rex/blob/main/3.Track.md)
 
    After each two following maps are matched, run this to track all grains through the whole dataset.
+
+All scripts work with [MATLAB](https://uk.mathworks.com/products/matlab.html) and [MTEX](https://mtex-toolbox.github.io/index). To [install MATLAB](https://login.mathworks.com/embedded-login/landing.html?cid=getmatlab&s_tid=gn_getml) you need firstly obtain a license (check if your organization provides one), and then follow the instructions. To [install MTEX](https://mtex-toolbox.github.io/download), please read the link and make sure the right version is deployed, we now supporting **mtex-6.0.beta2**. The whole toolbox is divided into three parts, as follows:
+
 
 ## Demonstration
 
