@@ -14,30 +14,13 @@ Potential collaborations: dikai.guan@soton.ac.uk
 
 # See our video instructions
 
-_**What is Track_rex**_ 
+_**Intro: What is Track_Rex**_ [Youtube](https://www.youtube.com/watch?v=hkKFDYwRhTQ) [Bilibili](https://www.bilibili.com/video/BV1mv421r77j)
 
-https://www.youtube.com/watch?v=hkKFDYwRhTQ (Youtube)
+_**Video1: Double Match**_ [Youtube](https://www.youtube.com/watch?v=_GstKJvMVOc) [BiliBili](https://www.bilibili.com/video/BV1YK421t7Na)
 
-https://www.bilibili.com/video/BV1mv421r77j (Bilibili)
+_**Video2: Tracking All**_ [Youtube](https://www.youtube.com/watch?v=VfS-a9o_TUI) [Bilibili](https://www.bilibili.com/video/BV1ix4y1C76C)
 
-_**Video1:Double Match**_ 
-
-https://www.youtube.com/watch?v=_GstKJvMVOc (Youtube)
-
-https://www.bilibili.com/video/BV1YK421t7Na (Bilibili)
-
-_**Video2:Tracking All**_ 
-
-https://www.youtube.com/watch?v=VfS-a9o_TUI (Youtube)
-
-https://www.bilibili.com/video/BV1ix4y1C76C (Bilibili)
-
-_**Video3:Tracking Specific grains**_ 
-
-https://www.youtube.com/watch?v=_l_4D8OAZRc (Youtube)
-
-https://www.bilibili.com/video/BV1Ex4y1r7eF (Bilibili)
-
+_**Video3: Tracking Specific grains**_ [Youtube](https://www.youtube.com/watch?v=_l_4D8OAZRc) [Bilibili](https://www.bilibili.com/video/BV1Ex4y1r7eF)
 
 ## Instructions & Setting up
 
