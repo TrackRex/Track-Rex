@@ -20,7 +20,7 @@ _**Video1: Double Match**_ [Youtube](https://www.youtube.com/watch?v=_GstKJvMVOc
 
 _**Video2: Tracking All**_ [Youtube](https://www.youtube.com/watch?v=VfS-a9o_TUI) [Bilibili](https://www.bilibili.com/video/BV1ix4y1C76C)
 
-_**Video3: Tracking Specific grains**_ [Youtube](https://www.youtube.com/watch?v=_l_4D8OAZRc) [Bilibili](https://www.bilibili.com/video/BV1Ex4y1r7eF)
+_**Video3: Specific Tracking**_ [Youtube](https://www.youtube.com/watch?v=_l_4D8OAZRc) [Bilibili](https://www.bilibili.com/video/BV1Ex4y1r7eF)
 
 ## Instructions & Setting up
 
