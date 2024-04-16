@@ -42,23 +42,13 @@ All scripts work with [MATLAB](https://uk.mathworks.com/products/matlab.html) an
 
 # Now master Track-Rex by following this demonstration
 
-Seven EBSD maps recording grains information of an Mg alloy from deformed state to fully recrystallized state are provided, [download](https://sotonac-my.sharepoint.com/:f:/g/personal/hy1v22_soton_ac_uk/EspZ87_7f1lDpcOm3537Q3kBsKB2qeoj4U2CkR0WyjqAlw?e=nyAZmb)
+Seven EBSD maps recording grains information of an Mg alloy from deformed state to fully recrystallized state are provided, [download](https://sotonac-my.sharepoint.com/:f:/g/personal/hy1v22_soton_ac_uk/EspZ87_7f1lDpcOm3537Q3kBsKB2qeoj4U2CkR0WyjqAlw?e=nyAZmb), below is a glance of the dataset:
 
 ![DemoDataSet](https://github.com/TrackRex/Track-Rex/assets/161822160/1e3f8b30-05c4-4b36-8d70-7690bea3697a)
 
 Now start playing with Track_Rex by following this demonstration, data and scripts can be found in this repository, this will take about 2 hours, note that we run this using a 13th Gen Intel(R) Core(TM) i9-13900K PC.
 
 If you computer does not have a high specification or you want to have a quick run/test, please use a dataset consisting of only 900 grains and this will only take about 30 minutes, files can be find in the main branch _**Samll_region_data.zip**_
-
-Download data files from MG_1.crc.zip to MG_7.crc.zip, unzip all and store in a local path. Below is a glance of the dataset, all the grains will be tracked in this demonstration.
-
-+ MG_1		as-deformed    2690grains
-+ MG_2		HeatStage_2		7163grains
-+ MG_3		HeatStage_3		8758grains
-+ MG_4		HeatStage_4		10767grains
-+ MG_5		HeatStage_5		8931grains
-+ MG_6		HeatStage_6		5296grains
-+ MG_7		HeatStage_7		5173grains
 
 ### 1. Checking
 
