@@ -8,7 +8,7 @@ We acknowledge all peer researchers whose excellent work has made this toolbox p
 
 # Contact us:
 
-general enquiries and questions: track-rex@soton.ac.uk
+General enquiries and questions: track-rex@soton.ac.uk
 
 Potential collaborations: dikai.guan@soton.ac.uk 
 
