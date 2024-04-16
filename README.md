@@ -44,7 +44,7 @@ All scripts work with [MATLAB](https://uk.mathworks.com/products/matlab.html) an
 
 Seven EBSD maps recording grains information of an Mg alloy from deformed state to fully recrystallized state are provided, [download](https://sotonac-my.sharepoint.com/:f:/g/personal/hy1v22_soton_ac_uk/EspZ87_7f1lDpcOm3537Q3kBsKB2qeoj4U2CkR0WyjqAlw?e=nyAZmb)
 
-![DemoDataset](https://github.com/TrackRex/Track-Rex/assets/161822160/bba8ad60-5fcd-4b66-8bcd-34d4fa2c2431)
+![DemoDataSet](https://github.com/TrackRex/Track-Rex/assets/161822160/1e3f8b30-05c4-4b36-8d70-7690bea3697a)
 
 Now start playing with Track_Rex by following this demonstration, data and scripts can be found in this repository, this will take about 2 hours, note that we run this using a 13th Gen Intel(R) Core(TM) i9-13900K PC.
 
