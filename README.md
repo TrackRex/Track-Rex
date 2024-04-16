@@ -24,7 +24,7 @@ _**Video3: Specific Tracking**_ [Youtube](https://www.youtube.com/watch?v=_l_4D8
 
 # Instructions & Setting up
 
-We divide Track-Rex into three scripts, click the link below and you can find annotated code as well as running instructions.
+We divide Track-Rex into three scripts, click the link below and you can find **annotated code** as well as **running instructions**.
 
 1. Script 1: [**Check**](https://github.com/TrackRex/Track-Rex/blob/main/1.Check.md)
 
