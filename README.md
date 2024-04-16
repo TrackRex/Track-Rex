@@ -43,15 +43,15 @@ https://www.bilibili.com/video/BV1Ex4y1r7eF (Bilibili)
 
 All scripts work with [MATLAB](https://uk.mathworks.com/products/matlab.html) and [MTEX](https://mtex-toolbox.github.io/index). To [install MATLAB](https://login.mathworks.com/embedded-login/landing.html?cid=getmatlab&s_tid=gn_getml) you need firstly obtain a license (check if your organization provides one), and then follow the instructions. To [install MTEX](https://mtex-toolbox.github.io/download), please read the link and make sure the right version is deployed, we now supporting **mtex-6.0.beta2**. The whole toolbox is divided into three parts, as follows:
 
-1. Script 1: '**Check**'.
+1. Script 1: [**Check**](https://github.com/TrackRex/Track-Rex/blob/main/1.Check.md)
 
    A short script for users to quickly review the data, and obtain the parameters for starting the matching process.
 
-4. Script 2: '**Match**'.
+4. Script 2:  [**Match**](https://github.com/TrackRex/Track-Rex/blob/main/2.Match.md)
 
    The core section, by which two in-situ EBSD maps are correlated, results will be used for further tracking.
 
-5. Script 3: '**Track**'.
+5. Script 3: [**Track**](https://github.com/TrackRex/Track-Rex/blob/main/3.Track.md)
 
    After each two following maps are matched, run this to track all grains through the whole dataset.
 
