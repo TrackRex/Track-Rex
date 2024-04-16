@@ -1,4 +1,4 @@
-# Cite this work for your future publications:
+# How to cite this work for your future publications:
 
 Please cite our open-access paper below:
 
