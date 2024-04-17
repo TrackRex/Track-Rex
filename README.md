@@ -64,8 +64,6 @@ Path to EBSD1: _path_/MG_5.crc (_**replace with your path to ZE_5.crc**_);
 
 Path to EBSD2: _path_/MG_6.crc (_**replace with your path to ZE_6.crc**_);
 
-You should see two figures with dense grains ID labels, figure1 is EBSD1 (MG_5 here), figure2 is EBSD2 (MG_6 here).
-
 ![check](https://github.com/TrackRex/Track-Rex/assets/161822160/8c9c450e-df22-498a-a7c2-0579460c6942)
 
 ### 2. Matching
