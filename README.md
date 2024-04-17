@@ -120,9 +120,9 @@ Example 1: Tracking all recrystallized grains 'born' in MG_2
 
 Example 2: Tracking the origination of all grains in MG_7
 
-![IMG_7](https://github.com/TrackRex/Track_Rex/assets/161822160/4af38204-0bf6-4d38-8b95-7a59b13e2069)
+![Vertical Tracking](https://github.com/TrackRex/Track-Rex/assets/161822160/7c5c3c96-97f7-4ac6-b757-f22f66b83d0c)
 
-![IMG_8](https://github.com/TrackRex/Track_Rex/assets/161822160/d35ebba4-5edc-4b8f-8c44-c565b535c900)
+![vertical_Tracking_2](https://github.com/TrackRex/Track-Rex/assets/161822160/851156d6-290c-4d77-98da-424bcd6f3cca)
 
 All figures will be saved under _D:/Track_Rex_Temp_. Now take a look at **Workspace**, tracking results stored in variables called _Track_x_, for example in _Track_1_:
 
