@@ -116,7 +116,7 @@ When finished, results will be plotted:
 
 Example 1: Tracking all recrystallized grains 'born' in MG_2
 
-![IMG_6](https://github.com/TrackRex/Track_Rex/assets/161822160/49a15b47-5c0e-433f-816d-35381207f825)
+![Track_Result](https://github.com/TrackRex/Track-Rex/assets/161822160/e280df31-04df-4bce-9e71-fe0b03e2c520)
 
 Example 2: Tracking the origination of all grains in MG_7
 
