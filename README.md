@@ -28,23 +28,25 @@ We divide Track-Rex into three scripts, click the link below and you can find **
 
 1. Script 1: [**Check**](https://github.com/TrackRex/Track-Rex/blob/main/1.Check.md)
 
-   A short script for users to quickly review the data, and obtain parameters to start the matching process.
+   Function: A short script for users to quickly review the data, and obtain parameters to start the matching process.
 
 4. Script 2:  [**Match**](https://github.com/TrackRex/Track-Rex/blob/main/2.Match.md)
 
-   The core section, by which two in-situ EBSD maps are correlated, results will be used for further tracking.
+   Function: The core section, by which two in-situ EBSD maps are correlated, results will be used for further tracking.
 
 5. Script 3: [**Track**](https://github.com/TrackRex/Track-Rex/blob/main/3.Track.md)
 
-   After each two following maps are matched, run this to track all grains through the whole dataset.
+   Function: After each two following maps are matched, run this to track all grains through the whole dataset.
 
 All scripts work with [MATLAB](https://uk.mathworks.com/products/matlab.html) and [MTEX](https://mtex-toolbox.github.io/index). To [install MATLAB](https://login.mathworks.com/embedded-login/landing.html?cid=getmatlab&s_tid=gn_getml) you need firstly obtain a license (check if your organization provides one), and then follow the instructions. To [install MTEX](https://mtex-toolbox.github.io/download), please make sure the right version is deployed, we now supporting **_mtex-6.0.beta3_**.
 
 # Now master Track-Rex by following this demonstration
 
-Seven EBSD maps recording grains information of an Mg alloy from deformed state to fully recrystallized state are provided, [download](https://sotonac-my.sharepoint.com/:f:/g/personal/hy1v22_soton_ac_uk/EspZ87_7f1lDpcOm3537Q3kBsKB2qeoj4U2CkR0WyjqAlw?e=nyAZmb), below is a glance of the dataset:
+Seven EBSD maps recording grains information of an Mg alloy from deformed state to fully recrystallized state are provided, [download](https://sotonac-my.sharepoint.com/:f:/g/personal/hy1v22_soton_ac_uk/EspZ87_7f1lDpcOm3537Q3kBsKB2qeoj4U2CkR0WyjqAlw?e=nyAZmb), a glance of the dataset:
 
 ![DemoDataSet](https://github.com/TrackRex/Track-Rex/assets/161822160/1e3f8b30-05c4-4b36-8d70-7690bea3697a)
+
+Please first read through the rest of this demonstration, which will show how Track-Rex works and then you can run the scripts yourself, either with our example dataset or your own datasets. Note that to track all grains above, it took roughly 2.5 hours on a 13th Gen Intel(R) Core(TM) i9-13900K PC. In case this dataset is too large to handle, use a smaller subset _**Samll_region_data.zip**_
 
 Now start playing with Track_Rex by following this demonstration, data and scripts can be found in this repository, this will take about 2 hours, note that we run this using a 13th Gen Intel(R) Core(TM) i9-13900K PC.
 
