@@ -61,6 +61,7 @@ iii. **a searching range**: search box length (µm) in EBSD2, adjust by the grai
 To check MG_5 & MG_6 for example, open Matlab and start MTEX, run [**Check**](https://github.com/TrackRex/Track-Rex/blob/main/1.Check.md) and give the input:
 
 Path to EBSD1: _path_/MG_5.crc (_**replace with your path to ZE_5.crc**_);
+
 Path to EBSD2: _path_/MG_6.crc (_**replace with your path to ZE_6.crc**_);
 
 You should see two figures with dense grains ID labels, figure1 is EBSD1 (MG_5 here), figure2 is EBSD2 (MG_6 here).
