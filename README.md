@@ -46,11 +46,7 @@ Seven EBSD maps recording grains information of an Mg alloy from deformed state 
 
 ![DemoDataSet](https://github.com/TrackRex/Track-Rex/assets/161822160/1e3f8b30-05c4-4b36-8d70-7690bea3697a)
 
-Please first read through the rest of this demonstration, which will show how Track-Rex works and then you can run the scripts yourself, either with our example dataset or your own datasets. Note that to track all grains above, it took roughly 2.5 hours on a 13th Gen Intel(R) Core(TM) i9-13900K PC. In case this dataset is too large to handle, use a smaller subset _**Samll_region_data.zip**_
-
-Now start playing with Track_Rex by following this demonstration, data and scripts can be found in this repository, this will take about 2 hours, note that we run this using a 13th Gen Intel(R) Core(TM) i9-13900K PC.
-
-If you computer does not have a high specification or you want to have a quick run/test, please use a dataset consisting of only 900 grains and this will only take about 30 minutes, files can be find in the main branch _**Samll_region_data.zip**_
+Please first read through the rest of this demonstration, which will show how Track-Rex works and then you can run the scripts yourself, either with our example dataset or your own datasets. Note that to track all grains above, it took roughly 2.5 hours on a 13th Gen Intel(R) Core(TM) i9-13900K PC. In case this dataset is too large to handle, use a small subset [_**Samll_region_data.zip**_](https://github.com/TrackRex/Track-Rex/blob/main/Small_region_data.zip) containing 900 grains, which should be able to handle easily.
 
 ### 1. Checking
 
