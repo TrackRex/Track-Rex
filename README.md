@@ -48,19 +48,25 @@ Seven EBSD maps recording grains information of an Mg alloy from deformed state 
 
 Please first read through the rest of this demonstration, which will show how Track-Rex works and then you can run the scripts yourself, either with our example dataset or your own datasets. Note that to track all grains above, it took roughly 2.5 hours on a 13th Gen Intel(R) Core(TM) i9-13900K PC. In case this dataset is too large to handle, use a small subset [_**Samll_region_data.zip**_](https://github.com/TrackRex/Track-Rex/blob/main/Small_region_data.zip) containing 900 grains, which should be able to handle easily.
 
-### 1. Checking
+## 1. Checking
 
-Open Matlab and start MTEX, copy all lines in '**Check.txt**' into the command window then press Enter. Script will ask for path to EBSD1 & EBSD2, here let's check MG_5 & MG_6, by giving:
+Before matching two EBSD maps, review the data first to get the parameters you need: 
+
+i. **a reference grain**: a grain exists in both two maps, note its IDs.
+
+ii. **a misangle threshold**: two grains with misorientation below this will be matched, adjust by the difference of orientation you observe.
+
+iii. **a searching range**: search box length (µm) in EBSD2, adjust by the grain size you observe.
+
+To check MG_5 & MG_6 for example, open Matlab and start MTEX, run [**Check**](https://github.com/TrackRex/Track-Rex/blob/main/1.Check.md) and give the input:
 
 Path to EBSD1: _path_/MG_5.crc (_**replace with your path to ZE_5.crc**_)
-
 Path to EBSD2: _path_/MG_6.crc (_**replace with your path to ZE_6.crc**_)
 
 You should see two figures with dense grains ID labels, figure1 is EBSD1 (MG_5 here), figure2 is EBSD2 (MG_6 here).
 
-When checking data, first find a grain to act as the reference grain for matching, here we use grain 3660 in ZE_5 & grain 2110 in ZE_6. Then review two maps from the aspect of grain size and orientation, this will help deciding matching parameters.
-
 ![IMG_1](https://github.com/TrackRex/Track_Rex/assets/161822160/932f231f-d6fd-45f3-a791-2e578cdc0980)
+
 
 ### 2. Matching
 
