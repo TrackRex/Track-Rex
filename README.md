@@ -88,6 +88,8 @@ After giving the above parameters, you should see the calculation process runnin
 
 When the calculation finishes, results will be plotted automatically, including grain size distribution and orientation
 
+![MG_5   MG_6](https://github.com/TrackRex/Track-Rex/assets/161822160/7136a795-9584-4c2f-9af2-cec7ed41eff7)
+
 ![IMG_2](https://github.com/TrackRex/Track_Rex/assets/161822160/8a70327c-0e94-453c-bc5f-7fd8ddc193b7)
 
 ![IMG_3](https://github.com/TrackRex/Track_Rex/assets/161822160/8211aba2-6482-4ed6-8989-bfe16cdba542)
