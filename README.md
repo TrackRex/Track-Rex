@@ -68,6 +68,8 @@ Path to EBSD2: _path_/MG_6.crc (_**replace with your path to ZE_6.crc**_);
 
 ### 2. Matching
 
+Once the two maps are checked, and the required parameters have been obtained, clear workspace using '**clear all;clc**' then run [**Match**](https://github.com/TrackRex/Track-Rex/blob/main/2.Match.md).
+
 After checking, run a line of '**clear all;clc**' to clean variables. Then copy all lines in '**Match.txt**' into the command window and press Enter, script will ask for user inputs, here let's match MG_5 & MG_6, by giving:
 
 Path to EBSD1: _path/MG_5.crc_ (**replace with your path to MG_5.crc**)
