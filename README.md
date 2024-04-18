@@ -80,9 +80,9 @@ Starting Grain in EBSD1: _3660_ (reference grain id in MG_5)
 
 Starting Grain in EBSD2: _2110_ (reference grain id in MG_6)
 
-Misangle Threshold: _5_ (two grains with angle difference below this threshold will be matched, adjust by the level of orientation difference you observe when checking data)
+Misangle Threshold: _5_ (adjustable)
 
-Searching Range: _50_ (the search box length (µm) in EBSD2, adjust by the average grain size you observe when checking data)
+Searching Range: _50_ (adjustable)
 
 After giving the above parameters, you should see the calculation process running for several minutes (depending on the size of your data)
 
