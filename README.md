@@ -80,15 +80,13 @@ Starting Grain in EBSD1: _3660_ (reference grain id in MG_5)
 
 Starting Grain in EBSD2: _2110_ (reference grain id in MG_6)
 
-Misangle Threshold: _5_ (adjustable)
+Misangle Threshold: _5_ (adjust this when processing your data)
 
-Searching Range: _50_ (adjustable)
+Searching Range: _50_ (adjust this when processing your data)
 
-After giving the above parameters, you should see the calculation process running for several minutes (depending on the size of your data)
+After giving the above parameters, matching process is fully automatic, you will see the correlation process running for several minutes (depending on the data size). When the calculation finishes, results will be plotted automatically, including grain size distribution and orientation
 
 ![Workflow](https://github.com/TrackRex/Track_Rex/assets/161822160/c1757a20-0401-4c7d-9b85-558c29600195)
-
-When the calculation finishes, results will be plotted automatically, including grain size distribution and orientation
 
 ![MG_5   MG_6](https://github.com/TrackRex/Track-Rex/assets/161822160/7136a795-9584-4c2f-9af2-cec7ed41eff7)
 
