@@ -84,7 +84,7 @@ Misangle Threshold: _5_ (adjust this when processing your data)
 
 Searching Range: _50_ (adjust this when processing your data)
 
-After giving the above parameters, matching process is fully automatic, you will see the correlation process running for several minutes (depending on the data size). When the calculation finishes, results will be plotted automatically, including grain size distribution and orientation
+After giving the above parameters, matching process is fully automatic, you will see the correlation process running for several minutes (depending on the data size). When finished, results will be plotted automatically, including grain size distributions and pole figures.
 
 ![Workflow](https://github.com/TrackRex/Track_Rex/assets/161822160/c1757a20-0401-4c7d-9b85-558c29600195)
 
