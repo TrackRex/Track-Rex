@@ -92,15 +92,13 @@ After giving the above parameters, matching process is fully automatic, you will
 
 ![Match_Results](https://github.com/TrackRex/Track-Rex/assets/161822160/df573239-d8c3-40f4-8714-a7d09daec51f)
 
-All figures will be saved under _D:/Track_Rex_Temp_. Now take a look at **Workspace**, Three important variables containing matched results here are:
-
-![IMG_4](https://github.com/TrackRex/Track_Rex/assets/161822160/ca2d8a9f-74ef-484d-a2d4-3e02539fd8f7)
-
-The last step here is, saving the variables for tracking, here we need:
+All figures will be saved under _D:/Track_Rex_Temp_. Now take a look at **Workspace**, Three important variables containing matched results here are as below. The last step here is, saving the variables for tracking, here we need:
 
 _**AllGrains**_ to be saved as _**A6_5**_
 
 Then save the workspace together with figures and archive all, empty _D:/Track_Rex_Temp_ folder. Now try to match each two following maps and save the variables for tracking.
+
+![IMG_4](https://github.com/TrackRex/Track_Rex/assets/161822160/ca2d8a9f-74ef-484d-a2d4-3e02539fd8f7)
 
 ### 3. Tracking
 
