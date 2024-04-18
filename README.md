@@ -52,11 +52,11 @@ Please first read through the rest of this demonstration, which will show how Tr
 
 Before matching two EBSD maps, review the data first to get the parameters you need: 
 
-i. **a reference grain**: a grain exists in both two maps, note its IDs.
+i. **reference grain**: a grain exists in both two maps, note its IDs.
 
-ii. **a misangle threshold**: two grains with misorientation below this will be matched, adjust by the difference of orientation you observe.
+ii. **misangle threshold**: below which misorientation 2 grains will be matched, adjust by the texture difference you observe.
 
-iii. **a searching range**: search box length (µm) in EBSD2, adjust by the grain size you observe.
+iii. **searching range**: search box length (µm) in EBSD2, adjust by the grain size you observe.
 
 To check MG_5 & MG_6 for example, open Matlab and start MTEX, run [**Check**](https://github.com/TrackRex/Track-Rex/blob/main/1.Check.md) and give the input:
 
