@@ -48,17 +48,17 @@ Seven EBSD maps recording grains information of an Mg alloy from deformed state 
 
 Please first read through the rest of this demonstration, which will show how Track-Rex works and then you can run the scripts yourself, either with our example dataset or your own datasets. Note that to track all grains above, it took roughly 2.5 hours on a 13th Gen Intel(R) Core(TM) i9-13900K PC. In case this dataset is too large to handle, use a small subset [_**Samll_region_data.zip**_](https://github.com/TrackRex/Track-Rex/blob/main/Small_region_data.zip) containing 900 grains, which should be able to handle easily.
 
-## 1. Checking
+## Step1. Checking
 
 Before matching two EBSD maps, review the data first to get the parameters you need: 
 
-i. **Reference Grain**: a grain exists in both two maps, note its IDs.
+I. **Reference Grain**: a grain exists in both two maps, note its IDs.
 
-ii. **Misangle Threshold**: below which misorientation 2 grains will be matched, adjust by the texture difference you observe.
+II. **Misangle Threshold**: below which misorientation 2 grains will be matched, adjusted by the texture difference observed.
 
-iii. **Searching Range**: search box length (µm) in EBSD2, adjust by the grain size you observe.
+III. **Searching Range**: search box length (µm) in EBSD2, adjusted by the grain size observed.
 
-To check MG_5 & MG_6 for example, open Matlab and start MTEX, run [**Check**](https://github.com/TrackRex/Track-Rex/blob/main/1.Check.md) and give the input:
+Checking MG_5 & MG_6 for example, open Matlab and start MTEX, run [**Check**](https://github.com/TrackRex/Track-Rex/blob/main/1.Check.md) and give the input:
 
 Path to EBSD1: _path_/MG_5.crc (_**replace with your path to ZE_5.crc**_);
 
@@ -66,11 +66,9 @@ Path to EBSD2: _path_/MG_6.crc (_**replace with your path to ZE_6.crc**_);
 
 ![check](https://github.com/TrackRex/Track-Rex/assets/161822160/8c9c450e-df22-498a-a7c2-0579460c6942)
 
-### 2. Matching
+### Step2. Matching
 
-Once two maps are checked, and required parameters have been obtained, clear workspace using '**clear all;clc**' then run [**Match**](https://github.com/TrackRex/Track-Rex/blob/main/2.Match.md).
-
-To match MG_5 & MG_6 for example, input as follows:
+Once two maps are checked and required parameters have been obtained, clear workspace using '**clear all;clc**' then run [**Match**](https://github.com/TrackRex/Track-Rex/blob/main/2.Match.md). Matching MG_5 & MG_6 for example, input as follows:
 
 Path to EBSD1: _path/MG_5.crc_ (**replace with your path to MG_5.crc**)
 
@@ -84,7 +82,7 @@ Misangle Threshold: _5_ (adjust this when processing your data)
 
 Searching Range: _50_ (adjust this when processing your data)
 
-After giving the above parameters, matching process is fully automatic, you will see the correlation process running for several minutes (depending on the data size). When finished, results will be plotted automatically, including grain size distributions and pole figures.
+After giving above parameters, matching process starts automatically, you will see the correlation process running for several minutes (depending on the data size). When finished, results including grain size distributions and pole figures will be plotted.
 
 ![Workflow](https://github.com/TrackRex/Track_Rex/assets/161822160/c1757a20-0401-4c7d-9b85-558c29600195)
 
