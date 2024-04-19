@@ -90,7 +90,7 @@ After giving above parameters, matching process starts automatically, you will s
 
 ![Match_Results](https://github.com/TrackRex/Track-Rex/assets/161822160/df573239-d8c3-40f4-8714-a7d09daec51f)
 
-All figures generated will be saved under _D:/Track_Rex_Temp_. Numerical results are in **Workspace**, Three important variables containing matched results here are as below. The last step here is, saving the variables for tracking, here we need:
+All figures generated will be saved under _D:/Track_Rex_Temp_. Numerical results are stored as variables in **Workspace**. Three important variables containing matched results here are as below. The last step here is, saving the variables for tracking, here we need:
 
 _**AllGrains**_ to be saved as _**A6_5**_
 
