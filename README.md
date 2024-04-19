@@ -90,11 +90,9 @@ After giving above parameters, matching process starts automatically, you will s
 
 ![Match_Results](https://github.com/TrackRex/Track-Rex/assets/161822160/df573239-d8c3-40f4-8714-a7d09daec51f)
 
-All figures generated will be saved under _D:/Track_Rex_Temp_. Numerical results are stored as variables in **Workspace**, three important ones are as below. The last step here is, saving the variables for tracking, here we need:
+All figures generated will be saved under _**D:/Track_Rex_Temp**_, and numerical results are stored as variables in **_Workspace_**. Save the workspace together with figures and archive all then empty _D:/Track_Rex_Temp_ folder.
 
-_**AllGrains**_ to be saved as _**A6_5**_
-
-Then save the workspace together with figures and archive all, empty _D:/Track_Rex_Temp_ folder. Now try to match each two following maps and save the variables for tracking.
+Three important variables are as below, the last step here is, saving the variables for tracking, here we need: _**AllGrains**_ to be saved as _**A6_5**_
 
 ![IMG_4](https://github.com/TrackRex/Track_Rex/assets/161822160/ca2d8a9f-74ef-484d-a2d4-3e02539fd8f7)
 
