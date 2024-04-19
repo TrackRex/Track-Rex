@@ -28,7 +28,7 @@ We divide Track-Rex into three scripts, click the link below and you can find **
 
 1. Script 1: [**Check**](https://github.com/TrackRex/Track-Rex/blob/main/1.Check.md)
 
-   Function: A short script for users to quickly review the data, and obtain parameters to start the matching process.
+   Function: A short script for users to quickly review EBSD data, and obtain parameters to start the matching process.
 
 4. Script 2:  [**Match**](https://github.com/TrackRex/Track-Rex/blob/main/2.Match.md)
 
